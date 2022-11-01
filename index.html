@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Release Manager-SwaLay </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Add New Song</h4>
+                    </div>
+                  <form id="addNewRelease" enctype="multipart/form-data">
+                  <div class="modal-body">
+
+                 <div class="form-group col-md-12">
+                 <label class="form-label">Song Title</label>
+                        <input type="text" class="form-control input-sm" name="add-title" placeholder="Title of Album or Song" required="">
+                 </div>
+                         <div class="form-group col-md-6">
+                           <label for="input1" class="form-label">Main Artist</label>
+                           <input type="text" name="artist" class="form-control input-sm" placeholder="Name of Artist" required="">
+                         </div>
+                        <div class="form-group col-md-6">
+                           <label for="input1" class="form-label">Genre</label>
+                         <select name="genre" class="form-control input-sm">
+                           <option value="select">Select</option>
+                           <option value="Pop">Pop</option> <option value=" Film"> Film</option> <option value=" Folk"> Folk</option> <option value=" Devotional"> Devotional</option> <option value=" Traditional"> Traditional</option>
+                            <option value=" Instrumental"> Instrumental</option> <option value=" Western Classical"> Western Classical</option>
+                             <option value=" Carnatic Classical"> Carnatic Classical</option> <option value=" Hindustani Classical"> Hindustani Classical</option> <option value=" Spiritual"> Spiritual</option> <option value=" English Pop"> English Pop</option> <option value=" Gazal"> Gazal</option> <option value=" Regional Pop"> Regional Pop</option> <option value=" Lounge"> Lounge</option>
+                             <option value="Fusion"> Fusion</option>
+                             <option value=" Electronic"> Electronic</option>
+                             <option value=" Hip Hop"> Hip Hop</option> <option value=" Rock"> Rock</option>
+                            </select>
+                     </div>
+
+                     <div class="form-group col-md-6">
+                       <label for="input1" class="form-label">Release Date</label>
+                           <input type="date" id="date-picker" name="date" class="form-control input-sm" required="">
+                         </div>
+                         <div class="form-group col-md-6">
+                           <label for="input1" class="form-label">Record label</label>
+
+                            <select name="label" class="form-control input-sm">
+
+                            <option value="SL Web Team">SL Web Team</option><option value="SL Web Team">Others</option>                              </select>
+                            </div>
+                         <div class="form-group col-md-6">
+                           <label for="input1" class="form-label">Language</label>
+                            <select name="language" class="form-control input-sm">
+                             <option value="Hindi">Hindi</option>
+                             <option value="Punjabi">Punjabi</option>
+                             <option value="English">English</option>
+                             <option value="Bengali">Bengali</option>
+                             <option value="Gujarati">Gujarati</option>
+                             <option value="Assamese">Assamese</option>
+                             <option value="Malayalam">Malayalam</option>
+                             <option value="Rajasthini">Rajasthini</option>
+                             <option value="Konkani">Konkani</option>
+                             <option value="Marathi">Marathi</option>
+                             <option value="Gadhwali">Gadhwali</option>
+                             <option value="Kannada">Kannada</option>
+                             <option value="Bhojpuri">Bhojpuri</option>
+                             <option value="Oriya">Oriya</option>
+                             <option value="Telugu">Telugu</option>
+                             <option value="Nagpuri">Nagpuri</option>
+                             <option value="Haryanvi">Haryanvi</option>
+                              <option value="Tamil">Tamil</option>
+                              <option value="Maithli">Maithli</option>
+                              <option value="Chhastisgarhi">Chhastisgarhi</option>
+                              <option value="Santhali">Santhali</option>
+                              <option value="Kasmiri">Kasmiri</option>
+                              <option value="Nepali">Nepali</option>
+                               <option value="Japanese">Japanese</option>
+                               <option value="Arabic">Arabic</option>
+                                <option value="African">African</option>
+                                <option value="Urdu">Urdu</option>
+                                <option value="Hadoti-Rajasthini">Hadoti-Rajasthini</option>
+                                <option value="Dogri">Dogri</option>
+                                <option value="Gharwali">Gharwali</option>
+                                <option value="Sanskrit">Sanskrit</option>
+                             </select>
+                         </div>
+
+
+                        <div class="form-group col-md-6">
+                           <label for="input1" class="form-label">Artwork</label>
+                         <input type="file" name="cover" class="form-control input-sm" accept="image/x-png,image/gif,image/jpeg,image/jpg" required>
+                        </div>
+
+                         <div class="form-group col-md-6">
+                          <label for="input1" class="form-label">Upload from Cloud</label>
+                          <input type="text" class="form-control" name="link" placeholder="Google Drive Link">
+                      </div>
+
+                      <div class="form-group col-md-6">
+                        <label for="duration">Select duration:</label>
+                        <input type="time"  class="form-control"id="duration" name="duration" placeholder="duration" required>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                           <label for="input1" class="form-label">P Line</label>
+                          <select name="pline" class="form-control input-sm"><option value="2021 SL Web Team">℗ 2022 SL Web Team</option>                              </select>
+                         </div>
+
+                        <div class="form-group col-md-6">
+                           <label for="input1" class="form-label">C Line</label>
+                         <select name="cline" class="form-control input-sm">
+                                     <option value="2021 SL Web Team">© 2022 SL Web Team</option>
+                            </select>
+                     </div>
+                   </div>
+
+                   <div class="clearfix"></div>
+                 <div class="modal-footer"><button class="btn btn-light" data-dismiss="modal">Cancel</button>
+                 <input type="submit" name="submit" class="btn btn-default" value="Submit"></div>
+             </form>
+             </div>
+           </div>
+</div>
+</body>
+</html>
